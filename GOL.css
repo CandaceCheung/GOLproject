@@ -1,0 +1,123 @@
+h1{
+    display: flex;
+    justify-content: center;
+    color: #ccccca;
+    padding: 10px;
+    background-color: #425363;
+    height: 80px;
+
+    /* all color 264653 , 2a9d8f, fcbf49, f4a261, e76f51*/
+}
+body{
+
+}
+.button{
+    display: flex;
+    justify-content:space-between;
+    margin: 15px;
+}
+.button5{
+    appearance: button;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #e9e9e9, #ebe8e1);
+    border: 0 solid #ccccca;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #482307;
+    column-gap: 1rem;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    outline: 2px solid transparent;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-transform: none;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+}
+
+.button5.button5:active {
+    background-color: #f3f4f6;
+    box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+    transform: translateY(0.125rem);
+}
+
+.button5:focus {
+    box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
+}
+
+.choose{
+    margin-top: 10px;
+}
+.form-group{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+input[type=range]::-webkit-slider-runnable-track{
+    background: #e9e9e9;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #ccccca, 0px 0px 6px #696156;
+    cursor: pointer;
+    border: none;
+ 
+}
+
+.scalButton::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    background:#425363;
+    cursor: pointer;
+}
+
+.canvaz-box{
+    position: relative;
+}
+
+#control{
+    position: absolute;
+    bottom: 100px;
+    left:30px;
+    /* bottom: 400px; */
+    max-height: 55px ;
+}
+
+#shape-select{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+}
+#scal{
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.scal-label{
+    display: flex;
+    align-items:center;
+    margin: 0 15px 0 15px;
+}
+.scal-bar{
+    margin-right: 10px;
+}
+.num-input{
+    margin: 10px 15px 10px 20px;
+}
+.life-input{
+    margin:10px
+}
+.friend-imput{
+    margin: 10px;
+}

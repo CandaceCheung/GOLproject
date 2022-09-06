@@ -1,0 +1,171 @@
+#logoC{
+    display: flex;
+    justify-content: center;
+    max-height: 280px;
+    max-width: 280px;
+}
+#myName{
+    font-family: 'Aboreto', 'cursive';
+    font-size: 80px;
+    font-weight: bolder;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.tittle{
+    display: flex;
+    justify-content: center;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight:0;
+}
+
+.icon-location{
+  display: flex;
+  justify-content: center;
+}
+
+.icon{
+    width: 350px;
+    height: auto;
+    border-radius: 40px;
+    margin: 5px;
+}
+
+.intro{
+  background-color: #FEFCFB;
+}
+
+.intro-p{
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 28px;
+    margin: 5px;
+    padding: 50px;
+}
+.intro-box{
+    width: 350px;
+    height: auto;
+    padding:20px;
+    margin-left: 40px;
+}
+
+.other-things{
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.spacing{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hobbies-box{
+  background-color: #f5ebe0;
+  border-radius: 18px;
+  margin: 10px;
+  min-height: 355px;
+}
+
+.photo-box{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.photos{
+  width: 200px;
+  height: auto;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  margin-top: 10px;
+  padding: 14px;
+}
+.flame{
+  width:200px;
+  height:210px;
+  color: #000;
+  border-radius: 50px;
+}
+
+.description{
+  font-family:'Josefin Sans', sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding-bottom:20px;
+
+}
+
+
+/* button */
+.the-button{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#go{
+    align-items: center;
+    background-color: #EBD8DA;
+    border: 2px solid #593d3b;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #593d3b;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+/* the go button */
+#go:after {
+  background-color: #593d3b;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+#go:hover:after {
+  transform: translate(0, 0);
+}
+
+#go:active {
+  background-color: #EBD8DA;
+  outline: 0;
+}
+
+#go:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  #go {
+    padding: 0 40px;
+  }
+}
+
+

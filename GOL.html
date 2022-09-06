@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>Game of life</title>
+  <link rel="stylesheet" href="GOL.css" />
+</head>
+
+<body>
+  <h1>Game of Life</h1>
+  <div class="col-lg canvaz-box">
+    <div id="canvas"></div>
+    <div id="control" class="button col-sm-4">
+      <button id="reset-game" role="button" class="button5">
+        Restart
+      </button>
+      <button id="random-game" role="button" class="button5">
+        Random
+      </button>
+      <button id="stop" role="button" class="button5">
+        Stop
+      </button>
+      <button id="start" role="button" class="button5">
+        Start
+      </button>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-4 num-input">
+      <div class="life-input">
+        <label for="exampleFormControlInput1">Life</label>
+        <input type="number" class="form-control" id="life-no" placeholder="1-3">
+      </div>
+      <div class="friend-imput">
+        <label for="exampleFormControlInput1">friends</label>
+        <input type="number" class="form-control" id="fd-no" placeholder="1-3">
+      </div>
+    </div>
+    <div id="shape-select" class="col-md-3">
+      <div class="form-group ">
+        <div>
+          <label for="exampleFormControlSelect1">Type of shape</label>
+          <select id="shape-type" class="form-control" id="exampleFormControlSelect1">
+            <option value="ship">ship</option>
+            <option value="glider">glider</option>
+            <option value="boat">boat</option>
+          </select>
+        </div>
+        <div>
+          <button type="button" id="addButton" lass="btn btn-outline-dark btn-sm">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="scal" class="col-md-3">
+      <div class="scalButton scal-label">
+        <input type="range" name="scal" min="10" max="35" step="0.5" class="scal-bar" />
+        <label for="scal">
+          <div>Scal</div>
+      </div>
+      </label>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"></script>
+  <script src="GOL.js"></script>
+</body>
+
+</html>
