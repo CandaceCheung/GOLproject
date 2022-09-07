@@ -46,8 +46,25 @@ function setup() {
     init();
 }
 
+// window resize
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+    // columns & rows increase and decrease size
+    columns = Math.floor(windowWidth / unitLength);
+    rows = Math.floor(windowWidth / unitLength);
+
+    for (let i = currentBoard.length; i < columns; i++) {
+        for (let j = 0; j < rows; j++) {
+            currentBoard[i] = [];
+            nextBoard[i] = [];
+        }
+    }
+    for (let i = 0; i < columns; i++) {
+        for (let j = 0; j < rows; j++) {
+            currentBoard[i][j] = 0;
+            nextBoard[i][j] = 0;
+        }
+    }
 }
 
 document.querySelector("#life-number").addEventListener("change", (e) => {
