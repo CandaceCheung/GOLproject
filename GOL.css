@@ -96,11 +96,17 @@ input[type=range]::-webkit-slider-runnable-track{
     display: flex;
     align-content: center;
 }
+
+.slider-box{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
 #scale, #speed{
     font-size: medium;
     display: flex;
     justify-content: center;
-    margin: 10px 30px 10px 20px;
+    margin: 10px 30px 15px 20px;
 }
 
 .scale-label, .speed-label{
