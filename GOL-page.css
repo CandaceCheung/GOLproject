@@ -64,14 +64,15 @@
 .hobbies-box{
   background-color: #f5ebe0;
   border-radius: 18px;
-  margin: 10px;
   min-height: 355px;
+  width: 300px;
 }
 
 .photo-box{
   display: flex;
   justify-content: center;
   margin: 5px;
+  aspect-ratio: auto;
 }
 
 .photos{

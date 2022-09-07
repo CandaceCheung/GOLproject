@@ -9,7 +9,7 @@ h1{
     /* all color 264653 , 2a9d8f, fcbf49, f4a261, e76f51*/
 }
 body{
-
+    
 }
 .button{
     display: flex;
@@ -43,7 +43,7 @@ body{
     box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
 }
 
-.button5.button5:active {
+.button5:active {
     background-color: #f3f4f6;
     box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
     transform: translateY(0.125rem);
@@ -72,14 +72,14 @@ input[type=range]::-webkit-slider-runnable-track{
  
 }
 
-.scalButton::-webkit-slider-thumb {
+.scaleButton::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
     background:#425363;
     cursor: pointer;
 }
 
-.canvaz-box{
+.canvas-box{
     position: relative;
 }
 
@@ -87,7 +87,6 @@ input[type=range]::-webkit-slider-runnable-track{
     position: absolute;
     bottom: 100px;
     left:30px;
-    /* bottom: 400px; */
     max-height: 55px ;
 }
 
@@ -97,19 +96,19 @@ input[type=range]::-webkit-slider-runnable-track{
     display: flex;
     align-content: center;
 }
-#scal{
+#scale{
     font-size: medium;
     display: flex;
     justify-content: center;
     margin-left: 30px;
     margin-right: 20px;
 }
-.scal-label{
+.scale-label{
     display: flex;
     align-items:center;
     margin: 0 15px 0 15px;
 }
-.scal-bar{
+.scale-bar{
     margin-right: 10px;
 }
 .num-input{

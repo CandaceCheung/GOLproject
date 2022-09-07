@@ -1,14 +1,16 @@
-let unitLength = 20;
 const boxColor = 150;
-const strokeColor = 50;
+let unitLength = 20;
+const strokeColor = 111;
 let columns;
 let rows;
 let currentBoard;
 let nextBoard;
 let loneliness = 2;
 let overPopulation = 3;
+let fr = 30;
 
-document.querySelector("#scal").onchange = function (event) {
+//scale button 
+document.querySelector("#scale").onchange = function (event) {
     unitLength = Number(event.target.value);
     setup();
 };
@@ -21,6 +23,7 @@ function init() {
         }
     }
 }
+
 function setup() {
     const canvas = createCanvas(windowWidth, windowHeight - 100);
     canvas.parent(document.querySelector("#canvas"));
@@ -34,7 +37,6 @@ function setup() {
         currentBoard[i] = [];
         nextBoard[i] = [];
     }
-
     init();
 }
 
@@ -42,11 +44,11 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
 
-document.querySelector("#life-no").addEventListener("change", (e) => {
+document.querySelector("#life-number").addEventListener("change", (e) => {
     loneliness = Number(e.target.value);
 });
 
-document.querySelector("#fd-no").addEventListener("input", () => {
+document.querySelector("#fd-number").addEventListener("input", () => {
     generate();
 });
 
@@ -150,7 +152,7 @@ document.querySelector("#stop").addEventListener("click", () => {
 
 //start
 document.querySelector("#start").addEventListener("click", () => {
-    Loop();
+    loop();
 });
 
 //random
