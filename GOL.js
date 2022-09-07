@@ -7,14 +7,13 @@ let currentBoard;
 let nextBoard;
 let loneliness = 2;
 let overPopulation = 3;
-let fr = 30;
+let fr = 25;
 
-//scale button 
-document.querySelector("#scale").onchange = function (event) {
+//scale button
+document.querySelector("#scale").addEventListener("change", function (event) {
     unitLength = Number(event.target.value);
     setup();
-};
-
+});
 function init() {
     for (let i = 0; i < columns; i++) {
         for (let j = 0; j < rows; j++) {
@@ -24,6 +23,13 @@ function init() {
     }
 }
 
+//speed button
+document.querySelector("#speed").addEventListener("change", function (event) {
+    frameRate(Number(event.target.value));
+});
+
+
+// setup
 function setup() {
     const canvas = createCanvas(windowWidth, windowHeight - 100);
     canvas.parent(document.querySelector("#canvas"));

@@ -96,21 +96,22 @@ input[type=range]::-webkit-slider-runnable-track{
     display: flex;
     align-content: center;
 }
-#scale{
+#scale, #speed{
     font-size: medium;
     display: flex;
     justify-content: center;
-    margin-left: 30px;
-    margin-right: 20px;
+    margin: 10px 30px 10px 20px;
 }
-.scale-label{
+
+.scale-label, .speed-label{
     display: flex;
     align-items:center;
     margin: 0 15px 0 15px;
 }
-.scale-bar{
+.scale-bar, .speed-bar{
     margin-right: 10px;
 }
+
 .num-input{
     margin: 10px 15px 10px 20px;
 }
